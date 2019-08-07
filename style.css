@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #000F18;
+  color: #01B1E7;
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+}
+
+.left-strip, .right-strip {
+  position: absolute;
+  width: 1px;
+  height: 100vh;
+  background: #D35A08;
+  z-index: -1;
+}
+
+.left-strip { left: 100px; }
+.right-strip { right: 100px; }
+
+.middle-strip {
+  position: absolute;
+  width: 70px;
+  height: 2000px;
+  background: #D35A08;
+  top: 0;
+  bottom: 0;
+  left: 40px;
+  transform: rotate(40deg);
+  z-index: -1;
+  opacity: .2;
+  margin-top: -300px;
+}
+
+.logo {
+  line-height: 40px;
+  float: left;
+  margin: 1.2em 0 0 2.2em;
+}
+
+.logo img {
+  width: 30px;
+  height: auto;
+}
+
+.sidetext {
+  position: absolute;
+  left: -120px;
+  top: 50%;
+  transform: rotate(-90deg);
+}
+
+.sidetext ul {
+  list-style: none;
+}
+
+.sidetext ul li {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 500;
+  margin-left: 45px;
+}
+
+.menu-btn {
+  float: right;
+  margin: 1.2em 2.5em 0 0;
+  line-height: 40px;
+}
+
+.menu-icon {
+  font-size: 20px;
+}
+
+.social-media {
+  position: absolute;
+  right: -130px;
+  top: 50%;
+  transform: rotate(90deg);
+}
+
+
+.social-media ul {
+  list-style: none;
+}
+
+.social-media ul li {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  margin-right: 60px;
+}
+
+.person img {
+  position: absolute;
+  bottom: 0;
+  max-width: 100%;
+  max-height: 100vh;
+  margin-left: -60px;
+  z-index: 1;
+}
+
+.content {
+  position: absolute;
+  top: 25%;
+  left: 48%;
+  width: 40%;
+}
+
+@font-face {
+  font-family: 'KreepTown';
+  font-style: normal;
+  font-weight: normal;
+  src: local('KreepTown'), url('./assets/fonts/KreepTown.otf') format('truetype')
+}
+
+
+.content p {
+  margin: 0;
+  font-family: 'KreepTown';
+  font-size: 30px;
+}
+
+.content h1 {
+  margin: 0;
+  font-family: 'KreepTown';
+  font-size: 80px;
+  color: #D35A08;
+  letter-spacing: 3px;
+}
+
+.content button {
+  display: inline-block;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border-radius: 50px;
+  margin-top: 20px;
+  outline: none;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+}
+
+.btn-1 {
+  background: #01B1E7;
+  color: #000F18;
+  padding: 20px 60px;
+  border: none;
+  margin-right: 20px;
+}
+
+.btn-1:hover {
+  background: #D35A08;
+}
+
+.btn-2 {
+  background: transparent;
+  color: #D35A08;
+  padding: 20px 35px;
+  border: 1px solid #D35A08;
+}
+
+.btn-2:hover {
+  background: #01B1E7;
+  border: 1px solid #01B1E7;
+  color: #000F18;
+}
+
+.dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dot {
+  display: inline-block;
+  height: 7px;
+  width: 7px;
+  background: #01B1E7;
+  margin: 0 .5em;
+  cursor: pointer;
+}
+
+.dot:nth-child(2) {
+  background: #D35A08;
+}
+
+.bottomnav {
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+}
+
+.bottomnav-title {
+  font-weght: 500;
+  margin-bottom: 20px;
+}
+
+.bottomnav-title::before {
+  display: inline-block;
+  content: "";
+  border-top: 2px solid #D35A08;
+  width: 65px;
+  margin: 0 20px 0 0;
+  transform: translateY(-5px);
+}
+
+.bottomnav img {
+  width: 300px;
+  height: auto;
+}
+
+.bottomnav ul {
+  list-style: none;
+}
+
+.bottomnav ul li {
+  position: absolute;
+  padding: 15px 18px;
+  font-size: 12px;
+  transition: .2s ease-in-out;
+  cursor: pointer;
+}
+
+.bottomnav ul li:nth-child(1) {
+  right: -20px;
+  bottom: 115px;
+  background: #D35A08;
+  border: 1px solid #D35A08;
+  color: #fff;
+}
+
+.bottomnav ul li:nth-child(1):hover {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #D35A08;
+}
+
+.bottomnav ul li:nth-child(2) {
+  right: -20px;
+  bottom: 35px;
+  background: #01B1E7;
+  border: 1px solid #01B1E7;
+  color: #000F18;
+}
+
+.bottomnav ul li:nth-child(2):hover {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #01B1E7;
+}
+

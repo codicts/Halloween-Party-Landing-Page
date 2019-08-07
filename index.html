@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Halloween</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <div class="strips">
+      <div class="left-strip"></div>
+      <div class="middle-strip"></div>
+      <div class="right-strip"></div>
+    </div>
+
+    <div class="logo">
+      <img src="./assets/img/skull.png" alt="">
+    </div>
+
+    <div class="sidetext">
+      <ul>
+        <li>Lorem</li>
+        <li>Ipsum</li>
+        <li>Dolor</li>
+        <li>Sit Amet</li>
+      </ul>
+    </div>
+
+    <div class="menu-btn">
+      <span class="menu-icon"><i class="fa fa-bars"></i></span>
+    </div>
+
+    <div class="social-media">
+      <ul>
+        <li>Facebook</li>
+        <li>Instagram</li>
+        <li>Twitter</li>
+      </ul>
+    </div>
+
+    <div class="person">
+      <img src="./assets/img/Halloween.png" alt="">
+    </div>
+
+    <div class="content">
+      <p>Are you ready for</p>
+      <h1>Halloween?</h1>
+      <button class="btn-1">Explore</button>
+      <button class="btn-2">Book Ticket</button>
+    </div>
+
+    <div class="dots">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+    <div class="bottomnav">
+      <div class="bottomnav-title">Halloples</div>
+
+      <div class="bottomnav-img">
+        <img src="./assets/img/Halloween-1.jpg" alt="">
+      </div>
+
+      <ul>
+        <li><i class="fa fa-chevron-left"></i></li>
+        <li><i class="fa fa-chevron-right"></i></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <script>
+
+    TweenMax.from(".logo", 2, {
+      y: 20,
+      opacity: 0,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.staggerFrom(".sidetext ul li", 2, {
+      x: 40,
+      opacity: 0,
+      ease: Expo.easeInOut
+    }, 0.2)
+
+    TweenMax.from(".menu-btn", 2, {
+      y: 20,
+      opacity: 0,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.staggerFrom(".social-media ul li", 2, {
+      x: 40,
+      opacity: 0,
+      ease: Expo.easeInOut
+    }, 0.2)
+
+    TweenMax.from(".person img", 2, {
+      delay: 1,
+      y: 60,
+      opacity: 0,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".middle-strip", 2, {
+      delay: 1,
+      y: -50,
+      opacity: 0,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.staggerFrom(".dot", 2, {
+      delay: 1.5,
+      y: 20,
+      opacity: 0,
+      ease: Expo.easeInOut
+    }, 0.2)
+
+    TweenMax.from(".content p", 1.8, {
+      delay: 1.5,
+      y: 20,
+      opacity: 0,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".content h1", 2, {
+      delay: 1.5,
+      y: 20,
+      opacity: 0,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".content .btn-1", 1.5, {
+      delay: 1.5,
+      y: 20,
+      opacity: 0,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".content .btn-2", 1.5, {
+      delay: 1.5,
+      y: 20,
+      opacity: 0,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".bottomnav-title", 2, {
+      delay: 2,
+      x: 20,
+      opacity: 0,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".bottomnav-img", 2, {
+      delay: 2,
+      y: 20,
+      opacity: 0,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".bottomnav ul li:nth-child(1)", 1, {
+      delay: 2,
+      x: 20,
+      opacity: 0,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".bottomnav ul li:nth-child(2)", 1, {
+      delay: 2,
+      x: -20,
+      opacity: 0,
+      ease: Expo.easeInOut
+    })
+  </script>
+
+</body>
+
+</html>
